@@ -197,9 +197,13 @@ void mydisplay(void){
 	glLineWidth(2.0);
 	glPointSize(2.0);
 	
-//	TH1: 0 < dy/dx < 1
+// TH1: 0 < dy/dx < 1
 //	glBegin(GL_POINTS);
 //	Line_MidPoint1(100, -70, -20, -100);
+//	glEnd();
+	
+//	glBegin(GL_POINTS);
+//	Line_MidPoint1(0, 0, 200, 100);
 //	glEnd();
 	
 //	glBegin(GL_LINES);
@@ -208,9 +212,13 @@ void mydisplay(void){
 //	glEnd();
 	
 //	TH2: dy/dx > 1
-	glBegin(GL_POINTS);
-	Line_MidPoint2(60, 200, 20, 20);
-	glEnd();
+//	glBegin(GL_POINTS);
+//	Line_MidPoint2(60, 200, 20, 20);
+//	glEnd();
+
+//	glBegin(GL_POINTS);
+//	Line_MidPoint2(0, 0, 100, 200);
+//	glEnd();
 	
 //	glBegin(GL_LINES);
 //	glVertex2i(20, 20);
@@ -222,6 +230,10 @@ void mydisplay(void){
 //	Line_MidPoint3(-20, -100, 100, -120);
 //	glEnd();
 
+//	glBegin(GL_POINTS);
+//	Line_MidPoint3(0, 0, -120, 50);
+//	glEnd();
+
 //	glBegin(GL_LINES);
 //	glVertex2i(-20, -100);
 //	glVertex2i(100, -120);
@@ -230,6 +242,10 @@ void mydisplay(void){
 //	TH4: dy/dx < -1
 //	glBegin(GL_POINTS);
 //	Line_MidPoint4(40, -300, 20, -50);
+//	glEnd();
+
+//	glBegin(GL_POINTS);
+//	Line_MidPoint4(0, 0, 50, -100);
 //	glEnd();
 
 //	glBegin(GL_LINES);
@@ -254,9 +270,9 @@ void mydisplay(void){
 //	glEnd();
 
 	// CIRCLE using Midpoint Algorithm
-//	glBegin(GL_POINTS);
-//	Circle_MidPoint(0, 0, 70);
-//	glEnd();
+	glBegin(GL_POINTS);
+	Circle_MidPoint(0, 0, 70);
+	glEnd();
 
 //	// CIRCLE using Mathematic sin cos and Pi Radian
 //	glBegin(GL_LINE_LOOP);
